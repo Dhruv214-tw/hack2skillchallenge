@@ -1,0 +1,39 @@
+.picker {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.moodBtn {
+  flex: 1;
+  min-width: 72px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  padding: 16px 8px;
+  border: 2px solid var(--border);
+  border-radius: var(--radius-md);
+  background: var(--bg-card);
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.moodBtn:hover {
+  border-color: var(--border-hover);
+  transform: translateY(-3px);
+  background: var(--bg-card-hover);
+}
+
+.moodBtn.selected {
+  border-color: var(--mood-color, var(--accent));
+  background: color-mix(in srgb, var(--mood-color, var(--accent)) 12%, transparent);
+  transform: translateY(-3px) scale(1.05);
+  box-shadow: 0 4px 20px color-mix(in srgb, var(--mood-color, var(--accent)) 30%, transparent);
+}
+
+.emoji { font-size: 2rem; line-height: 1; }
+
+.label { font-size: 0.6875rem; color: var(--text-muted); font-weight: 500; }
+
+.moodBtn.selected .label { color: var(--text-primary); }
