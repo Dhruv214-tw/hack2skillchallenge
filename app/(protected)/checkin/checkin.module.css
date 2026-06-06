@@ -1,0 +1,24 @@
+.form { display: flex; flex-direction: column; gap: 20px; max-width: 680px; }
+
+.section { padding: 24px; }
+
+.sectionTitle {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: 16px;
+}
+
+.optional { font-size: 0.75rem; font-weight: 400; color: var(--text-muted); }
+
+.doneCard {
+  padding: 48px 32px;
+  text-align: center;
+  max-width: 480px;
+}
+
+.doneIcon { font-size: 3rem; display: block; margin-bottom: 16px; }
+
+.doneCard h2 { margin-bottom: 12px; }
+
+.doneBtns { display: flex; gap: 12px; justify-content: center; margin-top: 24px; flex-wrap: wrap; }
