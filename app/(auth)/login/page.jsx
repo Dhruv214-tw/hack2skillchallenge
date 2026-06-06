@@ -37,11 +37,11 @@ export default function LoginPage() {
           exam_type: examType,
         })
       }
-      router.push('/dashboard')
+      window.location.href = '/dashboard'
     } else {
       const { error: loginError } = await supabase.auth.signInWithPassword({ email, password })
       if (loginError) { setError(loginError.message); setLoading(false); return }
-      router.push('/dashboard')
+      window.location.href = '/dashboard'
     }
 
     setLoading(false)
