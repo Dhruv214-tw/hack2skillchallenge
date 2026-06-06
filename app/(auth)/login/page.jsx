@@ -37,11 +37,11 @@ export default function LoginPage() {
           exam_type: examType,
         })
       }
-      window.location.href = '/dashboard'
+      setTimeout(() => { window.location.href = '/dashboard' }, 500)
     } else {
       const { error: loginError } = await supabase.auth.signInWithPassword({ email, password })
       if (loginError) { setError(loginError.message); setLoading(false); return }
-      window.location.href = '/dashboard'
+      setTimeout(() => { window.location.href = '/dashboard' }, 500)
     }
 
     setLoading(false)
