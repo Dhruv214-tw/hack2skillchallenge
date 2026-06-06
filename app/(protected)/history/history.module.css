@@ -1,0 +1,52 @@
+.empty { padding: 40px; text-align: center; }
+
+.chartCard { padding: 24px; margin-bottom: 24px; }
+
+.triggersCard { padding: 24px; margin-bottom: 24px; }
+
+.triggerList { display: flex; flex-direction: column; gap: 12px; }
+
+.triggerRow { display: flex; align-items: center; gap: 12px; }
+
+.triggerName { font-size: 0.875rem; color: var(--text-secondary); min-width: 160px; }
+
+.triggerBar {
+  flex: 1;
+  height: 8px;
+  background: var(--bg-card);
+  border-radius: 999px;
+  overflow: hidden;
+}
+
+.triggerFill {
+  height: 100%;
+  background: linear-gradient(90deg, var(--accent), var(--accent-light));
+  border-radius: 999px;
+  transition: width 0.8s ease;
+}
+
+.triggerCount { font-size: 0.75rem; color: var(--text-muted); min-width: 24px; text-align: right; }
+
+.recentCard { padding: 24px; }
+
+.recentList { display: flex; flex-direction: column; gap: 0; }
+
+.recentRow {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.recentRow:last-child { border-bottom: none; }
+
+.recentEmoji { font-size: 1.5rem; flex-shrink: 0; }
+
+.recentInfo { flex: 1; }
+
+.recentLabel { font-size: 0.9375rem; font-weight: 500; color: var(--text-primary); display: block; }
+
+.recentNote { font-size: 0.8125rem; color: var(--text-muted); display: block; margin-top: 2px; }
+
+.recentDate { font-size: 0.75rem; color: var(--text-muted); }
